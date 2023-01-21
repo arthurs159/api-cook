@@ -1,9 +1,13 @@
 package com.api.roadmap.entities;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
+
+import java.io.Serializable;
 
 @Entity
-public class Role {
+@Table(name = "tb_role")
+public class Role implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
